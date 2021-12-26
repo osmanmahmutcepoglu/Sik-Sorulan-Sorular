@@ -1,0 +1,1555 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="PHP Grid Framework Documentation - Datagrid made easy">
+      
+      
+        <link rel="canonical" href="https://www.phpgrid.org/docs/column-options/">
+      
+      
+        <meta name="author" content="Abu Ghufran">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s]+">
+      
+      <link rel="shortcut icon" href="../css/favicon.gif">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Column Options - PHP Grid Framework Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../extra/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#column-options" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid">
+      <div class="md-flex">
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="https://www.phpgrid.org/docs" title="PHP Grid Framework Docs" class="md-header-nav__button md-logo">
+            <img src="https://www.phpgrid.org/wp-content/uploads/logo-small-live.png" alt="PHP Grid Framework Docs">
+          </a>
+        </div>
+  
+        <div class="md-flex__cell md-flex__cell--stretch visit-main-site">
+          <a href="https://www.phpgrid.org" target="_blank">Visit Main Site &raquo;</a>
+        </div>
+      </div>
+    </nav>
+    <div class="title-and-search-bar">
+      <div class="md-grid">
+        <div class="md-flex">
+        <div class="md-flex__cell md-flex__cell--stretch">
+            <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+              
+              
+              <span class="md-header-nav__topic">
+                PHP Grid Framework Docs
+              </span>
+              <span class="md-header-nav__topic">
+                Column Options
+              </span>
+              
+              
+            </div>
+          </div>
+          <div class="md-flex__cell md-flex__cell--shrink">
+            
+            
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+  <!-- Site title -->
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    Sections
+  </label>
+
+  <!-- Repository containing source -->
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-first-grid/" title="Creating First Grid" class="md-nav__link">
+      Creating First Grid
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Customization
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../selecting-columns/" title="Selecting Columns" class="md-nav__link">
+      Selecting Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Column Options
+      </label>
+    
+    <a href="./" title="Column Options" class="md-nav__link md-nav__link--active">
+      Column Options
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#column-options" title="Column Options" class="md-nav__link">
+    Column Options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caption-shown-on-grid" title="Caption shown on grid" class="md-nav__link">
+    Caption shown on grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-table-field-name-or-alias" title="DB table field name or alias" class="md-nav__link">
+    DB table field name or alias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-tablefield-name" title="DB table.field name" class="md-nav__link">
+    DB table.field name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#width-of-column" title="Width of column" class="md-nav__link">
+    Width of column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editable-truefalse" title="Editable (true,false)" class="md-nav__link">
+    Editable (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewable-truefalse" title="Viewable (true,false)" class="md-nav__link">
+    Viewable (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frozen-truefalse" title="Frozen (true,false)" class="md-nav__link">
+    Frozen (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allow-null-truefalse" title="Allow null (true,false)" class="md-nav__link">
+    Allow null (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-increment-id-truefalse" title="Auto-increment ID (true,false)" class="md-nav__link">
+    Auto-increment ID (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizable-truefalse" title="Resizable (true,false)" class="md-nav__link">
+    Resizable (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-type-options" title="Edit Type &amp; Options" class="md-nav__link">
+    Edit Type &amp; Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readonly-column" title="Readonly Column" class="md-nav__link">
+    Readonly Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-form-option" title="Column Form Option" class="md-nav__link">
+    Column Form Option
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-formatter" title="Column Formatter" class="md-nav__link">
+    Column Formatter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-format" title="Date Format" class="md-nav__link">
+    Date Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-alignment-leftrightcenter" title="Text alignment (left,right,center)" class="md-nav__link">
+    Text alignment (left,right,center)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-searching-allowed-on-this-field-truefalse" title="Is searching allowed on this field (true,false)" class="md-nav__link">
+    Is searching allowed on this field (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown-in-auto-filter-search" title="Dropdown in auto filter search" class="md-nav__link">
+    Dropdown in auto filter search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limit-column-search-operators" title="Limit column search operators" class="md-nav__link">
+    Limit column search operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-sorting-allowed-on-this-field-truefalse" title="Is sorting allowed on this field (true,false)" class="md-nav__link">
+    Is sorting allowed on this field (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-type-only-work-with-load-with-array" title="Sort type (only work with load with array)" class="md-nav__link">
+    Sort type (only work with load with array)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-the-data-in-column-as-hyperlink" title="Make the data in column as hyperlink" class="md-nav__link">
+    Make the data in column as hyperlink
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-content" title="Static Content" class="md-nav__link">
+    Static Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-content" title="Dynamic Content" class="md-nav__link">
+    Dynamic Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-content" title="Conditional Content" class="md-nav__link">
+    Conditional Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hiding-column" title="Hiding Column" class="md-nav__link">
+    Hiding Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-wise-action-column" title="Row-wise Action Column" class="md-nav__link">
+    Row-wise Action Column
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grid-options/" title="Grid Options" class="md-nav__link">
+      Grid Options
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../master-detail-grid/" title="Master Detail Grid" class="md-nav__link">
+      Master Detail Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="Subgrid" class="md-nav__link">
+      Subgrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting-data/" title="Exporting Data" class="md-nav__link">
+      Exporting Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../importing-data/" title="Importing Data" class="md-nav__link">
+      Importing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../conditional-formatting/" title="Conditional Formatting" class="md-nav__link">
+      Conditional Formatting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping-headers/" title="Grouping Headers" class="md-nav__link">
+      Grouping Headers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../search/" title="Search" class="md-nav__link">
+      Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grid-events/" title="Grid Events" class="md-nav__link">
+      Grid Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../validation/" title="Validation" class="md-nav__link">
+      Validation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upload-files/" title="Upload Files" class="md-nav__link">
+      Upload Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../footer-summary/" title="Footer Summary" class="md-nav__link">
+      Footer Summary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../autocomplete/" title="Autocomplete" class="md-nav__link">
+      Autocomplete
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Layout & UI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Layout & UI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../responsive-design/" title="Responsive Design" class="md-nav__link">
+      Responsive Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Databases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Databases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-sql-server/" title="Connecting with SQL Server" class="md-nav__link">
+      Connecting with SQL Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-postgres/" title="Connecting with Postgres" class="md-nav__link">
+      Connecting with Postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-oracle/" title="Connecting with Oracle" class="md-nav__link">
+      Connecting with Oracle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../debug-mode/" title="Debug Mode" class="md-nav__link">
+      Debug Mode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#column-options" title="Column Options" class="md-nav__link">
+    Column Options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caption-shown-on-grid" title="Caption shown on grid" class="md-nav__link">
+    Caption shown on grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-table-field-name-or-alias" title="DB table field name or alias" class="md-nav__link">
+    DB table field name or alias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-tablefield-name" title="DB table.field name" class="md-nav__link">
+    DB table.field name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#width-of-column" title="Width of column" class="md-nav__link">
+    Width of column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editable-truefalse" title="Editable (true,false)" class="md-nav__link">
+    Editable (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewable-truefalse" title="Viewable (true,false)" class="md-nav__link">
+    Viewable (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frozen-truefalse" title="Frozen (true,false)" class="md-nav__link">
+    Frozen (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allow-null-truefalse" title="Allow null (true,false)" class="md-nav__link">
+    Allow null (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-increment-id-truefalse" title="Auto-increment ID (true,false)" class="md-nav__link">
+    Auto-increment ID (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizable-truefalse" title="Resizable (true,false)" class="md-nav__link">
+    Resizable (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-type-options" title="Edit Type &amp; Options" class="md-nav__link">
+    Edit Type &amp; Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readonly-column" title="Readonly Column" class="md-nav__link">
+    Readonly Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-form-option" title="Column Form Option" class="md-nav__link">
+    Column Form Option
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-formatter" title="Column Formatter" class="md-nav__link">
+    Column Formatter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-format" title="Date Format" class="md-nav__link">
+    Date Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-alignment-leftrightcenter" title="Text alignment (left,right,center)" class="md-nav__link">
+    Text alignment (left,right,center)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-searching-allowed-on-this-field-truefalse" title="Is searching allowed on this field (true,false)" class="md-nav__link">
+    Is searching allowed on this field (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown-in-auto-filter-search" title="Dropdown in auto filter search" class="md-nav__link">
+    Dropdown in auto filter search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limit-column-search-operators" title="Limit column search operators" class="md-nav__link">
+    Limit column search operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-sorting-allowed-on-this-field-truefalse" title="Is sorting allowed on this field (true,false)" class="md-nav__link">
+    Is sorting allowed on this field (true,false)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-type-only-work-with-load-with-array" title="Sort type (only work with load with array)" class="md-nav__link">
+    Sort type (only work with load with array)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-the-data-in-column-as-hyperlink" title="Make the data in column as hyperlink" class="md-nav__link">
+    Make the data in column as hyperlink
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-content" title="Static Content" class="md-nav__link">
+    Static Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-content" title="Dynamic Content" class="md-nav__link">
+    Dynamic Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-content" title="Conditional Content" class="md-nav__link">
+    Conditional Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hiding-column" title="Hiding Column" class="md-nav__link">
+    Hiding Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-wise-action-column" title="Row-wise Action Column" class="md-nav__link">
+    Row-wise Action Column
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Column Options</h1>
+                
+                <h2 id="column-options">Column Options</h2>
+<p>We can also customize each column properties. Following are the parameters, that can be passed to customize column definition on grid.</p>
+<h4 id="caption-shown-on-grid">Caption shown on grid</h4>
+<pre><code>$col["title"] = "Details";
+</code></pre>
+<h4 id="db-table-field-name-or-alias">DB table field name or alias</h4>
+<pre><code>$col["name"] = "view_more";
+</code></pre>
+<h4 id="db-tablefield-name">DB table.field name</h4>
+<pre><code>// in case of field name ambiguity b/w tables
+$col["dbname"] = "c.id";
+</code></pre>
+<h4 id="width-of-column">Width of column</h4>
+<pre><code>$col["width"] = "20";
+
+// to set exact pixel width
+$col["fixed"] = true;
+$col["width"] = "20";
+</code></pre>
+<h4 id="editable-truefalse">Editable (true,false)</h4>
+<pre><code>$col["editable"] = false;
+</code></pre>
+<h4 id="viewable-truefalse">Viewable (true,false)</h4>
+<p>When the option is set to false the column does not appear in view Form</p>
+<pre><code>$col["viewable"] = false;
+</code></pre>
+<h4 id="frozen-truefalse">Frozen (true,false)</h4>
+<p>When the option is set to true the column will be freezed while scrolling. Column must be first column of grid OR after another freezed column.</p>
+<pre><code>$col["frozen"] = true;
+</code></pre>
+<h4 id="allow-null-truefalse">Allow null (true,false)</h4>
+<p>If db fields allows null and we want to save (NULL) instead of "". Defaults to false</p>
+<pre><code>$col["isnull"] = true;
+</code></pre>
+<h4 id="auto-increment-id-truefalse">Auto-increment ID (true,false)</h4>
+<p>First field in column definition array is by-default skipped from INSERT query (assuming to be primary key and auto increment). 
+If you wish to include it in INSERT sql (non auto increment) you can set:</p>
+<pre><code>$col["autoid"] = false;
+</code></pre>
+<h4 id="resizable-truefalse">Resizable (true,false)</h4>
+<pre><code>$col["resizable"] = true;
+</code></pre>
+<h4 id="edit-type-options">Edit Type &amp; Options</h4>
+<p>This option let us select the control we want to render when editing this field. All possible options are in following snippet. Defaults to <code>text</code>. In <code>editoptions</code> we can set all the possible attributes for this field's control.</p>
+<p>Render as textarea on edit</p>
+<pre><code>$col["edittype"] = "textarea"; 
+$col["editoptions"] = array("rows"=&gt;2, "cols"=&gt;20);
+</code></pre>
+<p>Render as checkbox, with these values "checked_value:unchecked_value"</p>
+<pre><code>$col["edittype"] = "checkbox"; 
+$col["editoptions"] = array("value"=&gt;"Yes:No");
+</code></pre>
+<p>To make checkbox already in checked state while adding record
+    $col["editoptions"] = array("value"=&gt;"Yes:No", defaultValue=&gt; 'Yes'); </p>
+<p>Render as textbox with size 20, and initial value in textbox to 10</p>
+<pre><code>$col["editoptions"] = array("size"=&gt;20, "defaultValue"=&gt;'10');
+</code></pre>
+<p>Render as password textbox, it should be used with <code>$col["formatter"] = "password";</code> to hide password in listing</p>
+<pre><code>$col["edittype"] = "password";
+</code></pre>
+<p>Render as select (dropdown), with these values "key:value;key:value;key:value"</p>
+<pre><code>$col["edittype"] = "select";
+$col["editoptions"] = array("value"=&gt;'10:$10;20:$20;30:$30;40:$40;50:$50');
+
+// For multiselect, you probably need to write custom on_update handler
+$col["editoptions"] = array("value"=&gt;'10:$10;20:$20;30:$30;40:$40;50:$50', "multiple" =&gt; true);
+
+// In case you want to use different delimiter (:) and separator (;), you can override
+$col["editoptions"]["delimiter"] = ":";
+$col["editoptions"]["separator"] = ";";
+</code></pre>
+<p>Render as button</p>
+<pre><code>$col["edittype"] = "button";
+$col["editoptions"] = array("value"=&gt;'Click Me');
+</code></pre>
+<p>Render Radio buttons as edittype</p>
+<p>Radio buttons can be shown by custom method.</p>
+<pre><code>$col = array();
+$col["title"] = "Closing Rate";
+$col["name"] = "closed";
+$col["width"] = "30";
+$col["editable"] = true;
+$col["align"] = "center";
+$col["editoptions"]["dataInit"] = "function(o){edit_as_radio(o);}";
+$cols[] = $col;
+</code></pre>
+<p>... and in html section, we can define custom edit-type display</p>
+<pre><code>&lt;script&gt;
+function edit_as_radio(o)
+{
+    setTimeout(function(){
+        jQuery(o).hide();
+        jQuery(o).parent().append('&lt;input title="0" type="radio" name="rd_closed" value="0" onclick="jQuery(\'#total\').val(0);"/&gt; 0 &lt;input title="5" type="radio" name="rd_closed" value="5" onclick="jQuery(\'#total\').val(5);"/&gt; 5 &lt;input title="10" type="radio" name="rd_closed" value="10" onclick="jQuery(\'#total\').val(10);"/&gt; 10');
+    },100);
+}
+&lt;/script&gt;
+</code></pre>
+<p>Multiple checkboxes as edittype</p>
+<pre><code>$col = array();
+$col["title"] = "Closed";
+$col["name"] = "closed";
+$col["width"] = "50";
+$col["editable"] = true;
+$col["editoptions"]["dataInit"] = "function(o){edit_as_custom(o);}";
+$cols[] = $col;
+</code></pre>
+<p>and in html, add display function that will update the selection in main field (hidden)</p>
+<pre><code>&lt;script&gt;
+    function edit_as_custom(o)
+    {
+        setTimeout(function(){
+            jQuery(o).parent().append('&lt;input type="checkbox" name="rd_closed" value="1" onclick="set_checkbox_value();"/&gt; Option 1 &lt;input type="checkbox" name="rd_closed" value="2" onclick="set_checkbox_value();"/&gt; Option 2 &lt;input type="checkbox" name="rd_closed" value="3" onclick="set_checkbox_value();"/&gt; Option 3');
+            jQuery(o).css('display','none');
+
+            // here you can also read #closed value (if set) and set in checkboxes using jquery for edit mode
+
+        },100);
+    }
+
+    function set_checkbox_value()
+    {
+        jQuery('#closed').val( jQuery('input[name=rd_closed]:checked').map(function(){return this.value;}).get() );
+    }
+&lt;/script&gt;
+</code></pre>
+<h4 id="readonly-column">Readonly Column</h4>
+<p>You can also set certain column as readonly on edit dialog, and editable on add dialog.</p>
+<pre><code>$col["editrules"]["readonly"] = true;
+</code></pre>
+<p>To make column readonly in both add and edit dialog, use following:</p>
+<pre><code>// shows defaultValue only on add dialog and readonly
+$col["editoptions"] = array("defaultValue"=&gt;"Test Value","readonly"=&gt;"readonly", "style"=&gt;"border:0");
+</code></pre>
+<p>If you need to make a column non-editable when it contain some specific data, you can also put that condition using <code>readonly-when</code>. Refer column-access.php.</p>
+<pre><code>$col = array();
+$col["title"] = "Gender";
+$col["name"] = "gender";
+$col["editable"] = true;
+$col["editrules"] = array("required"=&gt;true, "readonly"=&gt;true, "readonly-when"=&gt;array("==","male"));
+$cols[] = $col;
+</code></pre>
+<p>For advance readonly logic, use callback function</p>
+<pre><code>$col["editrules"] = array("required"=&gt;true, "readonly"=&gt;true, "readonly-when"=&gt;"check_client");
+
+// html side .. JS callback function
+
+&lt;script&gt;
+// readonly gender conditional function - when return true, field will be readonly
+function check_client(formid)
+{
+    client_id = jQuery("input[name=client_id]:last, select[name=client_id]:last",formid).val();
+    client_id = parseInt(client_id);
+
+    if (jQuery.inArray(client_id,[3,6,7,8,9]) != -1)
+        return true;
+}
+&lt;/script&gt;
+</code></pre>
+<h4 id="column-form-option">Column Form Option</h4>
+<p>This option is valid only in form editing. The purpose of these options is to reorder the elements in the form and to add some information before and after the editing element.</p>
+<p><code>elmprefix</code> if set, a text or html content appears before the input element<br />
+<code>elmsuffix</code> string  if set, a text or html content appears after the input element<br />
+<code>label</code> string  if set, this replace the name from colNames array that appears as label in the form.<br />
+<code>rowpos</code> determines the row position of the element (again with the text-label) in the form; the count begins from 1<br />
+<code>colpos</code> determines the column position of the element (again with thelabel) in the form beginning from 1  </p>
+<p>If you plan to use this object in collModel with rowpos and colpos properties it is recommended that all editing fields use these properties. </p>
+<pre><code>$col["formoptions"] = array("elmprefix"=&gt;'(*)', "rowpos"=&gt;"1", "colpos"=&gt;"2");
+</code></pre>
+<p>To mark a field as required, you can use</p>
+<pre><code>$col["formoptions"] = array("elmsuffix"=&gt;'&lt;font color=red&gt; *&lt;/font&gt;');
+</code></pre>
+<h4 id="column-formatter">Column Formatter</h4>
+<p>This will format this column as date (and will show date picker control) on add or edit operations.</p>
+<pre><code>$col["formatter"] = "date";
+$col["formatoptions"] = array("srcformat"=&gt;'Y-m-d',"newformat"=&gt;'d/m/Y');
+</code></pre>
+<p>This will format this column as date time (and will show date time picker control) on add or edit operations.</p>
+<pre><code>$col["formatter"] = "datetime";
+$col["formatoptions"] = array("srcformat"=&gt;'Y-m-d',"newformat"=&gt;'d/m/Y');
+</code></pre>
+<p>Complete date formatting shortcode can be found on this link: http://www.php.net/manual/en/function.date.php</p>
+<p>By default, datepicker does not perform 'contains' search. If you wish to enable, you need to set following with date column.
+This will disable datepicker.</p>
+<pre><code>// contains search
+$col["searchoptions"]["sopt"] = array("cn");
+</code></pre>
+<p>Format of contains search is yyyy-mm-dd, which can be changed using 'dbname' property and mysql format_date function.</p>
+<pre><code>// search date in format Jan 23, 2008
+$col["dbname"] = "date_format(invdate,'%b %d, %Y')";
+</code></pre>
+<p>To show column as checkbox,</p>
+<pre><code>$col["formatter"] = "checkbox";
+</code></pre>
+<p>To display select box (dropdown) label instead of value,</p>
+<pre><code>$col["formatter"] = "select";
+</code></pre>
+<p>For password fields,</p>
+<pre><code>$col["formatter"] = "password";
+</code></pre>
+<p>You can also set format options for numeric and currency data.</p>
+<pre><code>$col["formatter"] = "number";
+$col["formatoptions"] = array("thousandsSeparator" =&gt; ",",
+                                "decimalSeparator" =&gt; ".",
+                                "decimalPlaces" =&gt; 2);
+
+$col["formatter"] = "currency";
+$col["formatoptions"] = array("prefix" =&gt; "$",
+                                "suffix" =&gt; '',
+                                "thousandsSeparator" =&gt; ",",
+                                "decimalSeparator" =&gt; ".",
+                                "decimalPlaces" =&gt; 2);
+</code></pre>
+<p>Render as image,</p>
+<pre><code>$col["formatter"] = "image";
+$col["formatoptions"] = array("src"=&gt;'http://test.com/image.jpg');
+</code></pre>
+<p>For custom formatter, e.g. image display</p>
+<pre><code>$col["formatter"] = "function(cellval,options,rowdata){ return '&lt;img src=\"'+cellval+'\" /&gt;'; }";
+$col["unformat"] = "function(cellval,options,cell){ return $('img', cell).attr('src'); }";
+</code></pre>
+<p>For custom formatter of percentage display</p>
+<pre><code>$col["formatter"] = "function(cellval,options,rowdata){ return cellval*100+'%'; }";
+$col["unformat"] = "function(cellval,options,cell){ return cellval.replace('%','')/100; }";
+</code></pre>
+<p>For custom formatter of fix height row (having html <br> content)</p>
+<pre><code>$col["formatter"] = "function(cellval,options,rowdata){ return '&lt;div style=\"height:25px; overflow:hidden;\"&gt;'+cellval+'&lt;/div&gt;'; }";
+$col["unformat"] = "function(cellval,options,cell){ return jQuery(cell).children('div').html(); }";
+</code></pre>
+<p>For raw link formatter</p>
+<pre><code>$col["formatter"] = "function(cellval,options,rowdata){ return '&lt;a target=\"_blank\" href=\"http://'+cellval+'\"&gt;'+cellval+'&lt;/a&gt;'; }";
+$col["unformat"] = "function(cellval,options,cell){ return $('a', cell).attr('href').replace('http://',''); }";
+</code></pre>
+<h4 id="date-format">Date Format</h4>
+<p>Governs format of editrules {date:true} fields. Determines the expected date format for that column. Uses a PHP-like date formatting. Currently "/", "-", and "." are supported as date separators. Valid formats are:<br />
+y,Y,yyyy for four digits year<br />
+YY, yy for two digits year<br />
+m,mm for months<br />
+d,dd for days  </p>
+<pre><code>$col["datefmt"] = "Y-m-d";
+</code></pre>
+<h4 id="text-alignment-leftrightcenter">Text alignment (left,right,center)</h4>
+<pre><code>$col["align"] = "center";
+</code></pre>
+<h4 id="is-searching-allowed-on-this-field-truefalse">Is searching allowed on this field (true,false)</h4>
+<pre><code>$col["search"] = false;
+</code></pre>
+<h4 id="dropdown-in-auto-filter-search">Dropdown in auto filter search</h4>
+<p>We need to set <code>stype</code> and <code>searchoptions</code> to enable dropdown search in autofilter.</p>
+<pre><code>// Fetch data from database, with alias k for key, v for value
+$str = $g-&gt;get_dropdown_values("select distinct client_id as k, name as v from clients");
+
+$col["stype"] = "select";
+$col["searchoptions"] = array("value" =&gt; $str, "separator" =&gt; ":", "delimiter" =&gt; ";");
+</code></pre>
+<h4 id="limit-column-search-operators">Limit column search operators</h4>
+<p>Optionally set limited search operators (e.g. bw = begins with, 'eq','ne','lt','le','gt','ge','bw','bn','in','ni','ew','en','cn','nc')</p>
+<p>This will limit search operators for this columns to begins-with, equal, cotains</p>
+<pre><code>$col["searchoptions"]["sopt"] = array("bw","eq","cn");
+</code></pre>
+<p>If you pass single operator, only that will be used in autofilter and override default contains search</p>
+<pre><code>$col["searchoptions"]["sopt"] = array("eq");
+</code></pre>
+<h4 id="is-sorting-allowed-on-this-field-truefalse">Is sorting allowed on this field (true,false)</h4>
+<pre><code>$col["sortable"] = false;
+</code></pre>
+<h4 id="sort-type-only-work-with-load-with-array">Sort type (only work with load with array)</h4>
+<p>Defines the type of sort for column.</p>
+<pre><code>/*
+Possible values: 
+int/integer - for sorting integer 
+float/number/currency - for sorting decimal numbers 
+date - for sorting date 
+text - for text sorting 
+*/
+
+$col["sorttype"] = int;
+</code></pre>
+<h4 id="make-the-data-in-column-as-hyperlink">Make the data in column as hyperlink</h4>
+<p>We can use exiting db-field value of that row in URL pattern. For e.g. if we have a grid column named 'id', we can insert it's value in URL using {id}. Here we set, http://domain.com?id={id} given that, there is a column with $col["name"] = "id" exist.</p>
+<pre><code>$col["link"] = "http://localhost/?id={id}";
+</code></pre>
+<p><code>linkoptions</code> option is used with <code>link</code> parameter to provide additional attributes.</p>
+<pre><code>$col["linkoptions"] = "target='_blank'"; // extra params with &lt;a&gt; tag
+</code></pre>
+<p>There is a limitation thatyou cannot make first column as hyperlink, as it is usually PK and used in INSERT/UPDATE.
+Alternate solution could be to select same field 2 times in SQL, and make first as hidden and second as hyperlink.</p>
+<h4 id="static-content">Static Content</h4>
+<p>If the column is static data (non database driven), we can set it with default param. We can set custom HTML too, for e.g. <code>&lt;img&gt;</code> or <code>&lt;div&gt;</code> etc.</p>
+<pre><code>$col["default"] = "View More"; // default link text
+</code></pre>
+<h4 id="dynamic-content">Dynamic Content</h4>
+<p>We can also use <code>{field}</code> replacement in <code>default</code> parameter. Here is an example for custom column to show bar graph. Where <code>bar</code> is a column alias from SQL statement. </p>
+<pre><code>$col = array();
+$col["title"] = "Performance";
+$col["name"] = "bar";
+$col["width"] = "40";
+$col["align"] = "left";
+$col["search"] = false;
+$col["sortable"] = false;
+$col["default"] = "&lt;div style='width:{bar}px; background-color:navy; height:14px'&gt;&lt;/div&gt;";
+$cols[] = $col;
+</code></pre>
+<p>In same way, we can embed dynamic images and other media (flv or swf) in grid.</p>
+<h4 id="conditional-content">Conditional Content</h4>
+<p>We can also provide certain condition, based on which either row data will be displayed.
+NOTE: Use single quote for condition, and $row will have all columns data, to use in condition.</p>
+<pre><code>$col["condition"] = array('$row["total"] &lt; 100', $data1, $data2);
+</code></pre>
+<p>Now if the condition is met, <code>$data1</code> will be displayed otherwise <code>$data2</code>. You can also <code>{field}</code> replacement in <code>$data1</code> &amp; <code>$data2</code>. Refer example below.</p>
+<pre><code># no new line in this html, only space. otherwise it may break ui of grid
+$buttons_buy = "&lt;a target='_blank' href='http://www.amazon.com?id={id}'&gt;Buy&lt;/a&gt;";
+$buttons_try = "&lt;a target='_blank' href='http://www.google.com?id={id}'&gt;Try&lt;/a&gt;";
+$col["condition"] = array('$row["total"] &gt; 10', $buttons_buy, $buttons_try);
+</code></pre>
+<p>For extended conditional data, you can also have callback function, that will allow you to display based on row data. For e.g.</p>
+<pre><code>$col["on_data_display"] = array("display_keyword","");
+
+function display_keyword($data)
+{
+    $kw = $data["keyword_name"];
+    $numKeywords = count(explode("\n",$pass));
+    if ($numKeywords &gt; 3)
+           return $numKeywords." Keywords";
+    else
+    {
+           $pass = str_replace("+"," ",$pass);
+           return $pass; 
+    }
+}
+</code></pre>
+<h4 id="hiding-column">Hiding Column</h4>
+<p>At instance, we don't want to show column in grid (like primary key), and it is equally needed for background operations like update or delete. <code>hidden</code> property can work here.</p>
+<pre><code>// don't show this column in list, but in edit/add mode
+$col["hidden"] = true;
+</code></pre>
+<p>If <code>hidedlg</code> set to true this column will not appear in the modal dialog (colchooser / showhidecolumn) where users can choose which columns to show or hide.    </p>
+<pre><code>$col["hidedlg"] = true;
+</code></pre>
+<p>Another scenario is we want to hide it on grid list, and display it on Add or Edit forms.</p>
+<pre><code>$col["editrules"] = array("edithidden"=&gt;true);
+</code></pre>
+<p>If you want to enable searching on this hidden column, set</p>
+<pre><code>$col["searchoptions"] = array("searchhidden" =&gt; true);
+</code></pre>
+<p>You can also customize in one line, on which dialog/section this column will be displayed. Possible options are true or false. This may override the hidden and edithidden settings. See column-access.php</p>
+<pre><code>$col["show"] = array("list"=&gt;true, "add"=&gt;true, "edit"=&gt;true, "view"=&gt;true, "bulkedit"=&gt;true);
+</code></pre>
+<h4 id="row-wise-action-column">Row-wise Action Column</h4>
+<p>When we enable inline edit/delete option, An additional column <code>Action</code> is appended as last column of grid.
+We can also specify, by defining a column with name <code>$col["name"] = "act";</code>. After that all changes will be applied on that column.</p>
+<pre><code># Customization of Action column width and other properties
+$col = array();
+$col["title"] = "Action";
+$col["name"] = "act";
+$col["width"] = "50";
+$cols[] = $col;
+</code></pre>
+<p><a href="#top">^ Top</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../selecting-columns/" title="Selecting Columns" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Selecting Columns
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../grid-options/" title="Grid Options" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Grid Options
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2010 - 2018
+          </div>
+        
+        <!-- powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a> -->
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/gridphp" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/in/abu-ghufran-bb22a512a" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://web.facebook.com/PHP-Grid-Framework-268762813193993/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/gridphp" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="../extra/extra.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-31709948-1","phpgrid.org"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1694 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="PHP Grid Framework Documentation - Datagrid made easy">
+      
+      
+        <link rel="canonical" href="https://www.phpgrid.org/docs/grid-options/">
+      
+      
+        <meta name="author" content="Abu Ghufran">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s]+">
+      
+      <link rel="shortcut icon" href="../css/favicon.gif">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Grid Options - PHP Grid Framework Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../extra/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#grid-options" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid">
+      <div class="md-flex">
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="https://www.phpgrid.org/docs" title="PHP Grid Framework Docs" class="md-header-nav__button md-logo">
+            <img src="https://www.phpgrid.org/wp-content/uploads/logo-small-live.png" alt="PHP Grid Framework Docs">
+          </a>
+        </div>
+  
+        <div class="md-flex__cell md-flex__cell--stretch visit-main-site">
+          <a href="https://www.phpgrid.org" target="_blank">Visit Main Site &raquo;</a>
+        </div>
+      </div>
+    </nav>
+    <div class="title-and-search-bar">
+      <div class="md-grid">
+        <div class="md-flex">
+        <div class="md-flex__cell md-flex__cell--stretch">
+            <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+              
+              
+              <span class="md-header-nav__topic">
+                PHP Grid Framework Docs
+              </span>
+              <span class="md-header-nav__topic">
+                Grid Options
+              </span>
+              
+              
+            </div>
+          </div>
+          <div class="md-flex__cell md-flex__cell--shrink">
+            
+            
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+  <!-- Site title -->
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    Sections
+  </label>
+
+  <!-- Repository containing source -->
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-first-grid/" title="Creating First Grid" class="md-nav__link">
+      Creating First Grid
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Customization
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../selecting-columns/" title="Selecting Columns" class="md-nav__link">
+      Selecting Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../column-options/" title="Column Options" class="md-nav__link">
+      Column Options
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Grid Options
+      </label>
+    
+    <a href="./" title="Grid Options" class="md-nav__link md-nav__link--active">
+      Grid Options
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grid-options" title="Grid Options" class="md-nav__link">
+    Grid Options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-sql-query" title="Custom SQL Query" class="md-nav__link">
+    Custom SQL Query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-settings" title="Grid Settings" class="md-nav__link">
+    Grid Settings
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#records-per-page" title="Records per Page" class="md-nav__link">
+    Records per Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-to-show-in-paging-records" title="Options to show in paging records" class="md-nav__link">
+    Options to show in paging records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-row-numbers" title="Show Row numbers" class="md-nav__link">
+    Show Row numbers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-paging-buttons" title="Show Paging Buttons" class="md-nav__link">
+    Show Paging Buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-initial-page" title="Set Initial Page" class="md-nav__link">
+    Set Initial Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-paging-text" title="Show Paging text" class="md-nav__link">
+    Show Paging text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fit-columns" title="Fit Columns" class="md-nav__link">
+    Fit Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extend-columns-to-grid-width" title="Extend Columns to Grid Width" class="md-nav__link">
+    Extend Columns to Grid Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autowidth" title="Autowidth" class="md-nav__link">
+    Autowidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizable-grid" title="Resizable Grid" class="md-nav__link">
+    Resizable Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsive-switch" title="Responsive Switch" class="md-nav__link">
+    Responsive Switch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initially-hidden-grid" title="Initially Hidden Grid" class="md-nav__link">
+    Initially Hidden Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-hide-grid-button" title="Show Hide Grid button" class="md-nav__link">
+    Show Hide Grid button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-height" title="Grid Height" class="md-nav__link">
+    Grid Height
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-width" title="Grid Width" class="md-nav__link">
+    Grid Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-text" title="Loading Text" class="md-nav__link">
+    Loading Text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolbar-position" title="Toolbar Position" class="md-nav__link">
+    Toolbar Position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiselect-records" title="Multiselect Records" class="md-nav__link">
+    Multiselect Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternate-row-color" title="Alternate Row Color" class="md-nav__link">
+    Alternate Row Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-grid-sorting" title="Initial Grid Sorting" class="md-nav__link">
+    Initial Grid Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-caption" title="Grid Caption" class="md-nav__link">
+    Grid Caption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lazy-loading-of-pages" title="Lazy Loading of Pages" class="md-nav__link">
+    Lazy Loading of Pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-or-ltr" title="RTL or LTR" class="md-nav__link">
+    RTL or LTR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooltips" title="Tooltips" class="md-nav__link">
+    Tooltips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotkeys" title="Hotkeys" class="md-nav__link">
+    Hotkeys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-mode-switch" title="Excel Mode Switch" class="md-nav__link">
+    Excel Mode Switch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reload-after-edit" title="Reload after Edit" class="md-nav__link">
+    Reload after Edit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-pager-on-top" title="Display Pager on Top" class="md-nav__link">
+    Display Pager on Top
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-for-ajax-calls" title="URL for Ajax calls" class="md-nav__link">
+    URL for Ajax calls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-dialog-customizations" title="Grid Dialog Customizations" class="md-nav__link">
+    Grid Dialog Customizations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog-success-message" title="Dialog Success Message" class="md-nav__link">
+    Dialog Success Message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog-submit-confirmation" title="Dialog Submit Confirmation" class="md-nav__link">
+    Dialog Submit Confirmation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog-display-position" title="Dialog Display Position" class="md-nav__link">
+    Dialog Display Position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-dialog-navigation-buttons" title="Show Dialog Navigation buttons" class="md-nav__link">
+    Show Dialog Navigation buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-action-icons-or-text" title="Row Action Icons or Text" class="md-nav__link">
+    Row Action Icons or Text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-column-setting" title="Global Column Setting" class="md-nav__link">
+    Global Column Setting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-actions" title="Grid Actions" class="md-nav__link">
+    Grid Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../master-detail-grid/" title="Master Detail Grid" class="md-nav__link">
+      Master Detail Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="Subgrid" class="md-nav__link">
+      Subgrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting-data/" title="Exporting Data" class="md-nav__link">
+      Exporting Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../importing-data/" title="Importing Data" class="md-nav__link">
+      Importing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../conditional-formatting/" title="Conditional Formatting" class="md-nav__link">
+      Conditional Formatting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping-headers/" title="Grouping Headers" class="md-nav__link">
+      Grouping Headers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../search/" title="Search" class="md-nav__link">
+      Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grid-events/" title="Grid Events" class="md-nav__link">
+      Grid Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../validation/" title="Validation" class="md-nav__link">
+      Validation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upload-files/" title="Upload Files" class="md-nav__link">
+      Upload Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../footer-summary/" title="Footer Summary" class="md-nav__link">
+      Footer Summary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../autocomplete/" title="Autocomplete" class="md-nav__link">
+      Autocomplete
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Layout & UI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Layout & UI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../responsive-design/" title="Responsive Design" class="md-nav__link">
+      Responsive Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Databases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Databases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-sql-server/" title="Connecting with SQL Server" class="md-nav__link">
+      Connecting with SQL Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-postgres/" title="Connecting with Postgres" class="md-nav__link">
+      Connecting with Postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-oracle/" title="Connecting with Oracle" class="md-nav__link">
+      Connecting with Oracle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../debug-mode/" title="Debug Mode" class="md-nav__link">
+      Debug Mode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grid-options" title="Grid Options" class="md-nav__link">
+    Grid Options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-sql-query" title="Custom SQL Query" class="md-nav__link">
+    Custom SQL Query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-settings" title="Grid Settings" class="md-nav__link">
+    Grid Settings
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#records-per-page" title="Records per Page" class="md-nav__link">
+    Records per Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-to-show-in-paging-records" title="Options to show in paging records" class="md-nav__link">
+    Options to show in paging records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-row-numbers" title="Show Row numbers" class="md-nav__link">
+    Show Row numbers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-paging-buttons" title="Show Paging Buttons" class="md-nav__link">
+    Show Paging Buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-initial-page" title="Set Initial Page" class="md-nav__link">
+    Set Initial Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-paging-text" title="Show Paging text" class="md-nav__link">
+    Show Paging text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fit-columns" title="Fit Columns" class="md-nav__link">
+    Fit Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extend-columns-to-grid-width" title="Extend Columns to Grid Width" class="md-nav__link">
+    Extend Columns to Grid Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autowidth" title="Autowidth" class="md-nav__link">
+    Autowidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizable-grid" title="Resizable Grid" class="md-nav__link">
+    Resizable Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsive-switch" title="Responsive Switch" class="md-nav__link">
+    Responsive Switch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initially-hidden-grid" title="Initially Hidden Grid" class="md-nav__link">
+    Initially Hidden Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-hide-grid-button" title="Show Hide Grid button" class="md-nav__link">
+    Show Hide Grid button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-height" title="Grid Height" class="md-nav__link">
+    Grid Height
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-width" title="Grid Width" class="md-nav__link">
+    Grid Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-text" title="Loading Text" class="md-nav__link">
+    Loading Text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolbar-position" title="Toolbar Position" class="md-nav__link">
+    Toolbar Position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiselect-records" title="Multiselect Records" class="md-nav__link">
+    Multiselect Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternate-row-color" title="Alternate Row Color" class="md-nav__link">
+    Alternate Row Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-grid-sorting" title="Initial Grid Sorting" class="md-nav__link">
+    Initial Grid Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-caption" title="Grid Caption" class="md-nav__link">
+    Grid Caption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lazy-loading-of-pages" title="Lazy Loading of Pages" class="md-nav__link">
+    Lazy Loading of Pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-or-ltr" title="RTL or LTR" class="md-nav__link">
+    RTL or LTR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tooltips" title="Tooltips" class="md-nav__link">
+    Tooltips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotkeys" title="Hotkeys" class="md-nav__link">
+    Hotkeys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-mode-switch" title="Excel Mode Switch" class="md-nav__link">
+    Excel Mode Switch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reload-after-edit" title="Reload after Edit" class="md-nav__link">
+    Reload after Edit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-pager-on-top" title="Display Pager on Top" class="md-nav__link">
+    Display Pager on Top
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-for-ajax-calls" title="URL for Ajax calls" class="md-nav__link">
+    URL for Ajax calls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-dialog-customizations" title="Grid Dialog Customizations" class="md-nav__link">
+    Grid Dialog Customizations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog-success-message" title="Dialog Success Message" class="md-nav__link">
+    Dialog Success Message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog-submit-confirmation" title="Dialog Submit Confirmation" class="md-nav__link">
+    Dialog Submit Confirmation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog-display-position" title="Dialog Display Position" class="md-nav__link">
+    Dialog Display Position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-dialog-navigation-buttons" title="Show Dialog Navigation buttons" class="md-nav__link">
+    Show Dialog Navigation buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-action-icons-or-text" title="Row Action Icons or Text" class="md-nav__link">
+    Row Action Icons or Text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-column-setting" title="Global Column Setting" class="md-nav__link">
+    Global Column Setting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-actions" title="Grid Actions" class="md-nav__link">
+    Grid Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Grid Options</h1>
+                
+                <h2 id="grid-options">Grid Options</h2>
+<h3 id="custom-sql-query">Custom SQL Query</h3>
+<p>By default, when we define the <code>-&gt;table</code> property, it fetches all the possible columns of table.
+We can provide custom SQL query in <code>-&gt;select_command</code> property to pick columns available for grid. 
+We can use complex multi-join sub-queries in it.</p>
+<pre><code>$g-&gt;select_command = "SELECT i.id, invdate , c.name,
+                        i.note, i.total, i.closed FROM invheader i
+                        INNER JOIN clients c ON c.client_id = i.client_id";
+</code></pre>
+<h3 id="grid-settings">Grid Settings</h3>
+<p>You can use following options for <code>-&gt;set_options($opt)</code> function.</p>
+<h4 id="records-per-page">Records per Page</h4>
+<p>Number of records to show on page</p>
+<pre><code>$opt["rowNum"] = 10;
+</code></pre>
+<h4 id="options-to-show-in-paging-records">Options to show in paging records</h4>
+<pre><code>$opt["rowList"] = array(10,20,30);
+
+// you can also set 'All' for all records
+$opt["rowList"] = array(10,20,30,'All');
+
+// empty array will hide dropdown
+$opt["rowList"] = array();
+</code></pre>
+<h4 id="show-row-numbers">Show Row numbers</h4>
+<p>To show row numbers before each records, and set that column's width</p>
+<pre><code>$opt["rownumbers"] = true;
+$opt["rownumWidth"] = 30
+</code></pre>
+<h4 id="show-paging-buttons">Show Paging Buttons</h4>
+<p>To show/remove Paging navigation buttons</p>
+<pre><code>$opt["pgbuttons"] = false;
+</code></pre>
+<h4 id="set-initial-page">Set Initial Page</h4>
+<p>To set initial page (e.g. as page 2) of grid</p>
+<pre><code>$opt["page"] = 2;
+
+// to set last page, set some big number
+$opt["page"] = 9999;
+</code></pre>
+<h4 id="show-paging-text">Show Paging text</h4>
+<p>To show/remove Paging text e.g. Page 1 of 10</p>
+<pre><code>$opt["pgtext"] = null;
+</code></pre>
+<p>Enable or Disable total records text on grid</p>
+<pre><code>$opt["viewrecords"] = true;
+</code></pre>
+<h4 id="fit-columns">Fit Columns</h4>
+<p>If set to true, and resizing the width of a column, the adjacent column (to the right) will resize so that the overall grid width is maintained (e.g., reducing the width of column 2 by 30px will increase the size of column 3 by 30px). In this case there is no horizontal scrolbar. Note: this option is not compatible with shrinkToFit option - i.e if shrinkToFit is set to false, forceFit is ignored.</p>
+<pre><code>$opt["forceFit"] = true;
+</code></pre>
+<h4 id="extend-columns-to-grid-width">Extend Columns to Grid Width</h4>
+<p>This option describes the type of calculation of the initial width of each column against with the width of the grid. If the value is true and the value in width option is set then: Every column width is scaled according to the defined option width.</p>
+<pre><code>$opt["shrinkToFit"] = true;
+</code></pre>
+<h4 id="autowidth">Autowidth</h4>
+<p>Expand grid to screen width</p>
+<pre><code>$opt["autowidth"] = true;
+</code></pre>
+<h4 id="resizable-grid">Resizable Grid</h4>
+<p>Show corner (lower-right) resizable option on grid</p>
+<pre><code>$opt["resizable"] = true; // defaults to false
+</code></pre>
+<h4 id="responsive-switch">Responsive Switch</h4>
+<p>Auto resize grid with browser resize</p>
+<pre><code>$opt["autoresize"] = true; // defaults to false
+</code></pre>
+<h4 id="initially-hidden-grid">Initially Hidden Grid</h4>
+<p>If set to true the grid initially is hidden. The data is not loaded (no request is sent) and only the caption layer is shown. When the show/hide button is clicked the first time to show grid, the request is sent to the server, the data is loaded, and grid is shown. From this point we have a regular grid. This option has effect only if the caption property is not empty and the hidegrid property (see below) is set to true.</p>
+<pre><code>$opt["hiddengrid"] = true;
+</code></pre>
+<h4 id="show-hide-grid-button">Show Hide Grid button</h4>
+<p>Enables or disables the show/hide grid button, which appears on the right side of the Caption layer. Takes effect only if the caption property is not an empty string.</p>
+<pre><code>$opt["hidegrid"] = true;
+</code></pre>
+<h4 id="grid-height">Grid Height</h4>
+<p>The height of the grid. Can be set as percentage or any valid measured value</p>
+<pre><code>// set in pixels
+$opt["height"] = "400";
+
+// to remove vertical scroll bar
+$opt["height"] = "100%";
+</code></pre>
+<h4 id="grid-width">Grid Width</h4>
+<p>If this option is not set, the width of the grid is a sum of the widths of the columns defined</p>
+<pre><code>$opt["width"] = "600";
+</code></pre>
+<h4 id="loading-text">Loading Text</h4>
+<p>The text which appear when requesting and sorting data. Defaults to <code>Loading...</code></p>
+<pre><code>$opt["loadtext"] = "Loading...";
+</code></pre>
+<h4 id="toolbar-position">Toolbar Position</h4>
+<p>This option defines the toolbar of the grid. This is array with two values in which the first value enables the toolbar and the second defines the position relative to body Layer. Possible values "top" or "bottom" or "both"</p>
+<pre><code>$opt["toolbar"] = "top";
+</code></pre>
+<h4 id="multiselect-records">Multiselect Records</h4>
+<p>Allow you to multi-select through checkboxes</p>
+<pre><code>$opt["multiselect"] = true;
+</code></pre>
+<p>Allow you to multi-select through checkboxes and not whole row</p>
+<pre><code>$opt["multiboxonly"] = true;
+</code></pre>
+<p>This parameter have sense only multiselect option is set to true. The possible values are: shiftKey, altKey, ctrlKey</p>
+<pre><code>$opt["multikey"] = true;
+</code></pre>
+<h4 id="alternate-row-color">Alternate Row Color</h4>
+<p>Set a zebra-striped grid, boolean</p>
+<pre><code>$opt["altRows"] = true;
+</code></pre>
+<h4 id="initial-grid-sorting">Initial Grid Sorting</h4>
+<p>Default sort grid by this field, Sort ASC or DESC</p>
+<pre><code>$opt["sortname"] = 'id'; 
+$opt["sortorder"] = "desc";
+</code></pre>
+<p>To sort on multiple fields (at time of loading)</p>
+<pre><code>// Date will be sorted desc, and ID asc.
+$opt["sortname"] = "date DESC,id"; 
+$opt["sortorder"] = "ASC";
+</code></pre>
+<p>To sort first click in DESC sequence, set:</p>
+<pre><code>$opt["firstsortorder"] = "desc";
+</code></pre>
+<p>This will make SQL: ORDER BY date DESC,id ASC   </p>
+<h4 id="grid-caption">Grid Caption</h4>
+<p>This will set grid caption.</p>
+<pre><code>$opt["caption"] = "Invoice Data";
+</code></pre>
+<p>In order to remove caption bar, set it to blank.</p>
+<pre><code>$opt["caption"] = "";
+</code></pre>
+<h4 id="lazy-loading-of-pages">Lazy Loading of Pages</h4>
+<p>Creates dynamic scrolling grids. When enabled, the pager elements are disabled and we can use the vertical scrollbar to load data. useful for big datasets</p>
+<pre><code>$opt["scroll"] = true;
+</code></pre>
+<h4 id="rtl-or-ltr">RTL or LTR</h4>
+<p>Makes grid right to left, for rtl languages e.g. arabic. Default is ltr</p>
+<pre><code>$opt["direction"] = "rtl";
+</code></pre>
+<h4 id="tooltips">Tooltips</h4>
+<p>Enable tooltips for icons and long text: true/false</p>
+<pre><code>$opt["tooltip"] = true;
+</code></pre>
+<h4 id="hotkeys">Hotkeys</h4>
+<p>Enable or disable hotkeys for add, edit or delete operations: true/false
+It only work for first grid on page.</p>
+<pre><code>$opt["hotkeys"] = true;
+</code></pre>
+<h4 id="excel-mode-switch">Excel Mode Switch</h4>
+<p>Inline cell editing, like spreadsheet</p>
+<pre><code>$opt["cellEdit"] = true;
+</code></pre>
+<h4 id="reload-after-edit">Reload after Edit</h4>
+<p>To reload whole grid after editing</p>
+<pre><code>$opt["reloadedit"] = true;
+</code></pre>
+<h4 id="display-pager-on-top">Display Pager on Top</h4>
+<p>Display Top Pager bar</p>
+<pre><code>$opt["toppager"] = true;
+</code></pre>
+<h4 id="url-for-ajax-calls">URL for Ajax calls</h4>
+<p>URL for grid page (for ajax calls), defaults to REQUEST_URI. It works with http &amp; https. Used when passing extra querystring data, e.g.</p>
+<pre><code>$opt["url"] = "http://domain/page.php?test=1";
+</code></pre>
+<h4 id="grid-dialog-customizations">Grid Dialog Customizations</h4>
+<p>Set Add and Edit form &amp; View dialog width. This can be used with combination of css customization of dialog forms.</p>
+<pre><code>$opt["add_options"] = array('width'=&gt;'420');
+$opt["edit_options"] = array('width'=&gt;'420');
+$opt["view_options"] = array('width'=&gt;'420');
+</code></pre>
+<p>Just like width in dialog options, you can also set other for e.g.</p>
+<pre><code>$opt["add_options"] = array('width'=&gt;'420', 
+                            "closeAfterAdd"=&gt;true, // close dialog after add/edit
+                            "clearAfterAdd"=&gt;true, // clear fields after add/edit - default true
+                            "top"=&gt;"200", // absolute top position of dialog
+                            "left"=&gt;"200" // absolute left position of dialog
+                            );
+
+$opt["edit_options"] = array('width'=&gt;'420',    
+                            "closeAfterEdit"=&gt;true, // close dialog after add/edit
+                            "top"=&gt;"200", // absolute top position of dialog
+                            "left"=&gt;"200" // absolute left position of dialog
+                            );
+</code></pre>
+<p>To specify exact top/left position (as above), you need to set:</p>
+<pre><code>$opt["form"]["position"] = "";
+$opt["add_options"]["jqModal"] = true;
+</code></pre>
+<h4 id="dialog-success-message">Dialog Success Message</h4>
+<p>You can also customize the success messages that appear after add/edit/del operations.</p>
+<pre><code>$opt["add_options"]["success_msg"] = "Post added";
+$opt["edit_options"]["success_msg"] = "Post updated";
+$opt["delete_options"]["success_msg"] = "Post deleted";
+
+// for bulk editing
+$opt["edit_options"]["success_msg_bulk"] = "Post(s) updated";
+...
+$g-&gt;set_options($opt);
+</code></pre>
+<p>To remove these success messages, you can set:</p>
+<pre><code>$opt["add_options"]["afterSubmit"] = 'function(response) { return [true,""]; }';
+$opt["edit_options"]["afterSubmit"] = 'function(response) { return [true,""]; }';
+$opt["delete_options"]["afterSubmit"] = 'function(response) { return [true,""]; }';
+</code></pre>
+<h4 id="dialog-submit-confirmation">Dialog Submit Confirmation</h4>
+<p>This option work only in editing mode. If Set to true this option will work only when a submit button is clicked and 
+if any data is changed in the form. If the data is changed a dilog message appear where the user is asked 
+to confirm the changes or cancel it. </p>
+<pre><code>$opt["edit_options"]["checkOnSubmit"] = true;
+</code></pre>
+<h4 id="dialog-display-position">Dialog Display Position</h4>
+<p>To Set Form to position on center of screen</p>
+<pre><code>$opt["form"]["position"] = "center";
+</code></pre>
+<h4 id="show-dialog-navigation-buttons">Show Dialog Navigation buttons</h4>
+<p>Enable form Prev | Next record navigation</p>
+<pre><code>$opt["form"]["nav"] = true;
+</code></pre>
+<p>Refer demos/appearance/dialog-layout.php for demo.</p>
+<h4 id="row-action-icons-or-text">Row Action Icons or Text</h4>
+<p>You can enable / disable the row action icons, by setting it true or false. It is enabled by default in latest version.</p>
+<pre><code>$opt["actionicon"] = false;
+...
+$g-&gt;set_options($opt);
+</code></pre>
+<h4 id="global-column-setting">Global Column Setting</h4>
+<p>If we want to set some column property across all columns of grid, without individually setting them with column definition,
+We can use <code>cmTemplate</code> property.</p>
+<pre><code>$opt["shrinkToFit"] = false;
+$opt["autowidth"] = true;
+$opt["cmTemplate"] = array("width"=&gt;"400");
+...
+$g-&gt;set_options($opt);
+</code></pre>
+<p>Above will set each column width to 400.</p>
+<h3 id="grid-actions">Grid Actions</h3>
+<p>We can also switch actions to enable or disable them on grid. It is controlled by <code>-&gt;set_actions()</code> function.</p>
+<p>Possible values are <code>true</code> or <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Operations</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>add</code></td>
+<td>Enable / Disable add operation on grid. Defaults to <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>edit</code></td>
+<td>Enable / Disable edit operation on grid. Defaults to <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>bulkedit</code></td>
+<td>Enable / Disable bulk edit operation on grid. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>delete</code></td>
+<td>Enable / Disable delete operation on grid. Defaults to <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>view</code></td>
+<td>Enable / Disable view operation on grid. Defaults to <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>clone</code></td>
+<td>Enable / Disable clone operation on grid. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>rowactions</code></td>
+<td>Enable / Disable inline edit/del/save option. Defaults to <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>export</code></td>
+<td>Enable / Disable export to excel option. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>import</code></td>
+<td>Enable / Disable import data option. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>autofilter</code></td>
+<td>Enable / Disable autofilter toolbar for search on top. Defaults to <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>showhidecolumns</code></td>
+<td>Enable / Disable button to hide certain columns from client side. Defaults to <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>inlineadd</code></td>
+<td>Enable / Disable button to perform insertion inline. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>search</code></td>
+<td>Search property can have 3 values, <code>simple</code>, <code>advance</code> or <code>false</code> to hide.</td>
+</tr>
+</tbody>
+</table>
+<p>Code:</p>
+<pre><code>$g-&gt;set_actions(array(  
+                        "add"=&gt;true,
+                        "edit"=&gt;true,
+                        "clone"=&gt;true,
+                        "bulkedit"=&gt;true,                           
+                        "delete"=&gt;true,
+                        "view"=&gt;true,
+                        "rowactions"=&gt;true,
+                        "export"=&gt;true,
+                        "import"=&gt;true,
+                        "autofilter" =&gt; true,
+                        "search" =&gt; "simple",
+                        "inlineadd" =&gt; true,
+                        "showhidecolumns" =&gt; true
+                    ) 
+                );
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../column-options/" title="Column Options" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Column Options
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../master-detail-grid/" title="Master Detail Grid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Master Detail Grid
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2010 - 2018
+          </div>
+        
+        <!-- powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a> -->
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/gridphp" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/in/abu-ghufran-bb22a512a" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://web.facebook.com/PHP-Grid-Framework-268762813193993/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/gridphp" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="../extra/extra.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-31709948-1","phpgrid.org"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

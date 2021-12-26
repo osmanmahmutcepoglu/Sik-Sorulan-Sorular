@@ -1,0 +1,116 @@
+{
+  "name": "metismenu",
+  "version": "3.0.6",
+  "description": "A collapsible jQuery menu plugin",
+  "main": "dist/cjs/index.js",
+  "module": "dist/modules/index.js",
+  "browser": "dist/metisMenu.js",
+  "unpkg": "dist/metisMenu.min.js",
+  "jsdelivr": "dist/metisMenu.min.js",
+  "typings": "types/metismenu.d.ts",
+  "style": "dist/metisMenu.css",
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "js:dev": "rollup -c -w",
+    "js:prod": "rollup -c",
+    "js:minify": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content=dist/metisMenu.js.map,includeSources,url=metisMenu.min.js.map\" --output dist/metisMenu.min.js dist/metisMenu.js",
+    "css:dev": "postcss src/metisMenu.css -o dist/metisMenu.css --map",
+    "css:min": "cross-env NODE_ENV=production postcss src/metisMenu.css -o dist/metisMenu.min.css --map",
+    "build": "npm run js:prod && npm run js:minify && npm run css:dev && npm run css:min",
+    "test": "eslint src/*.js",
+    "deploy": "gh-pages -d demo"
+  },
+  "repository": "onokumus/metismenu",
+  "keywords": [
+    "accordion",
+    "bootstrap",
+    "jquery",
+    "menu",
+    "metis",
+    "metisMenu",
+    "toggle",
+    "twbs",
+    "twitter"
+  ],
+  "author": "Osman Nuri Okumus <onokumus@gmail.com> (https://github.com/onokumus)",
+  "contributors": [
+    "Rein de Vries <info@reinos.nl> (https://github.com/reinos/)",
+    "Arthur CHAN <arthur@talkgoal.com> (http://catchtop.com)",
+    "Andrew Eastwood (https://github.com/AndrewEastwood)",
+    "Marcelo Tosco <capy.net@gmail.com> (http://ecapy.com)",
+    "Radoslav Štofko (http://www.stoweb.cz)",
+    "Umut Karcı <cediddi@gmail.com> (https://github.com/cediddi)",
+    "Chris Wiggins <chris@wiggins.nz> (https://github.com/chriswiggins)",
+    "Jacob Magnusson <m@jacobian.se> (https://github.com/jmagnusson)",
+    "QQ <sinabs@gmail.com> (https://github.com/sinabs)",
+    "roman <rgnevashev@gmail.com> (https://github.com/rgnevashev)",
+    "diegozhu <zhuhaiyang55@gmail.com> (http://sae.zhuhaiyang.me)",
+    "WoMayr (https://github.com/WoMayr)",
+    "719media (https://github.com/719media)",
+    "Boris Burkov (Boris Burkov)",
+    "Matt Dziuban (http://mattdziuban.com)",
+    "Valerio Belli (https://github.com/DrugoLebowski)",
+    "Diogo Pereira <diogopereira@pereiradiogo.com> (http://pereiradiogo.com)",
+    "Nicolas Igot <nicolasigot@gmail.com> (http://www.igot-web.com)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onokumus/metismenu/issues"
+  },
+  "homepage": "https://github.com/onokumus/metismenu#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@types/jquery": "^3.3.33",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "gh-pages": "^2.2.0",
+    "postcss-cli": "^7.1.0",
+    "postcss-header": "^2.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "uglify-js": "^3.8.0"
+  },
+  "verb": {
+    "toc": {
+      "collapsible": false,
+      "method": "preWrite"
+    },
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "helpers": [
+      "helper-changelog"
+    ],
+    "related": {
+      "list": [
+        "metismenujs",
+        "@metismenu/react"
+      ]
+    },
+    "reflinks": [
+      "metismenujs",
+      "@metsimenu/react",
+      "elektron",
+      "onoffcanvas",
+      "twbuttons"
+    ]
+  },
+  "peerDependencies": {
+    "jquery": "^3.4.1"
+  }
+}

@@ -1,0 +1,865 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="PHP Grid Framework Documentation - Datagrid made easy">
+      
+      
+        <link rel="canonical" href="https://www.phpgrid.org/docs/importing-data/">
+      
+      
+        <meta name="author" content="Abu Ghufran">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s]+">
+      
+      <link rel="shortcut icon" href="../css/favicon.gif">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Importing Data - PHP Grid Framework Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../extra/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#importing-data" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid">
+      <div class="md-flex">
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="https://www.phpgrid.org/docs" title="PHP Grid Framework Docs" class="md-header-nav__button md-logo">
+            <img src="https://www.phpgrid.org/wp-content/uploads/logo-small-live.png" alt="PHP Grid Framework Docs">
+          </a>
+        </div>
+  
+        <div class="md-flex__cell md-flex__cell--stretch visit-main-site">
+          <a href="https://www.phpgrid.org" target="_blank">Visit Main Site &raquo;</a>
+        </div>
+      </div>
+    </nav>
+    <div class="title-and-search-bar">
+      <div class="md-grid">
+        <div class="md-flex">
+        <div class="md-flex__cell md-flex__cell--stretch">
+            <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+              
+              
+              <span class="md-header-nav__topic">
+                PHP Grid Framework Docs
+              </span>
+              <span class="md-header-nav__topic">
+                Importing Data
+              </span>
+              
+              
+            </div>
+          </div>
+          <div class="md-flex__cell md-flex__cell--shrink">
+            
+            
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+  <!-- Site title -->
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    Sections
+  </label>
+
+  <!-- Repository containing source -->
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-first-grid/" title="Creating First Grid" class="md-nav__link">
+      Creating First Grid
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Customization
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../selecting-columns/" title="Selecting Columns" class="md-nav__link">
+      Selecting Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../column-options/" title="Column Options" class="md-nav__link">
+      Column Options
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grid-options/" title="Grid Options" class="md-nav__link">
+      Grid Options
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../master-detail-grid/" title="Master Detail Grid" class="md-nav__link">
+      Master Detail Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="Subgrid" class="md-nav__link">
+      Subgrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting-data/" title="Exporting Data" class="md-nav__link">
+      Exporting Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Importing Data
+      </label>
+    
+    <a href="./" title="Importing Data" class="md-nav__link md-nav__link--active">
+      Importing Data
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-data" title="Importing Data" class="md-nav__link">
+    Importing Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../conditional-formatting/" title="Conditional Formatting" class="md-nav__link">
+      Conditional Formatting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping-headers/" title="Grouping Headers" class="md-nav__link">
+      Grouping Headers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../search/" title="Search" class="md-nav__link">
+      Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grid-events/" title="Grid Events" class="md-nav__link">
+      Grid Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../validation/" title="Validation" class="md-nav__link">
+      Validation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upload-files/" title="Upload Files" class="md-nav__link">
+      Upload Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../footer-summary/" title="Footer Summary" class="md-nav__link">
+      Footer Summary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../autocomplete/" title="Autocomplete" class="md-nav__link">
+      Autocomplete
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Layout & UI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Layout & UI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../responsive-design/" title="Responsive Design" class="md-nav__link">
+      Responsive Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Databases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Databases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-sql-server/" title="Connecting with SQL Server" class="md-nav__link">
+      Connecting with SQL Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-postgres/" title="Connecting with Postgres" class="md-nav__link">
+      Connecting with Postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connecting-with-oracle/" title="Connecting with Oracle" class="md-nav__link">
+      Connecting with Oracle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../debug-mode/" title="Debug Mode" class="md-nav__link">
+      Debug Mode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-data" title="Importing Data" class="md-nav__link">
+    Importing Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Importing Data</h1>
+                
+                <h2 id="importing-data">Importing Data</h2>
+<p>Import data option can be enabled by setting <code>import</code> to <code>true</code> in set_actions, as mentioned below:</p>
+<pre><code>$g-&gt;set_actions(array(  
+                        "add"=&gt;true,
+                        "edit"=&gt;true,
+                        "delete"=&gt;true,
+                        "import"=&gt;true,
+                        "search" =&gt; "advance"
+                    ) 
+                );
+</code></pre>
+<p>Step1: Select File / Copy-Paste data from Excel</p>
+<p><img alt="Select File" src="http://www.phpgrid.org/wp-content/gallery/documentation/import-1.png" /></p>
+<p>Step2: Map imported data on Database fields</p>
+<p><img alt="Map fields" src="http://www.phpgrid.org/wp-content/gallery/documentation/import-2.png" /></p>
+<p>Step3: Finished</p>
+<p><img alt="Import finished" src="http://www.phpgrid.org/wp-content/gallery/documentation/import-3.png" /></p>
+<p>By default new rows are appended. If you want to show append or replace option on Step2, you can set:</p>
+<pre><code>$opt["import"]["allowreplace"] = true;
+$g-&gt;set_options($opt);
+</code></pre>
+<p>If you wish to remove certain database fields in import mapping, e.g.</p>
+<pre><code>$opt["import"]["hidefields"] = array("client_id");
+$g-&gt;set_options($opt);
+</code></pre>
+<h4 id="resources">Resources</h4>
+<ul>
+<li><a href="http://www.phpgrid.org/demo/demos/export/import.phps">Sample Code</a> </li>
+<li><a href="http://www.phpgrid.org/demo/demos/export/import.php">See Live Demo</a></li>
+<li>You can check this demo in archive <code>demos/export/import.php</code></li>
+</ul>
+<p><a href="#top">^ Top</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../exporting-data/" title="Exporting Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Exporting Data
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../conditional-formatting/" title="Conditional Formatting" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Conditional Formatting
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2010 - 2018
+          </div>
+        
+        <!-- powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a> -->
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/gridphp" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/in/abu-ghufran-bb22a512a" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://web.facebook.com/PHP-Grid-Framework-268762813193993/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/gridphp" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="../extra/extra.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-31709948-1","phpgrid.org"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

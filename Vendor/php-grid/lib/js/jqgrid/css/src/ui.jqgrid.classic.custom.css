@@ -1,0 +1,148 @@
+/* Custom PHP Grid */
+.ui-jqgrid {position: relative; font-size:11px; font-family:"tahoma","verdana","sans serif";}
+.ui-jqgrid body, .ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {font-family:"tahoma","verdana","sans serif"; font-size:11px;}
+.ui-custom-icon { display: block; float: left; height: 14px; margin: 0px 5px; width: 14px; margin-top: 3px; }
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-div span.ui-icon {margin:0;}
+.ui-jqgrid .ui-jqgrid-toppager .ui-pg-div span.ui-icon {margin:0;}
+.ui-jqgrid .editable {margin: 5px 0px; padding:2px 1px; font-family:"tahoma","verdana","sans serif";}
+.ui-jqgrid .editable input {text-indent: 4px;}
+.ui-jqgrid .ui-jqgrid-title img { display:none; }
+.ui-jqgrid .ui-jqgrid-titlebar-close {width: 15px;}
+
+/*Grid*/
+.ui-jqgrid input, .ui-jqgrid textarea {font-size:11px; font-family:"tahoma","verdana","sans serif";}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-div, .ui-jqgrid .ui-jqgrid-toppager .ui-pg-div {padding:1px 2px 1px 2px;float:left;position:relative;line-height: 18px;}
+.ui-jqgrid .ui-jqgrid-htable th div {height:auto;}
+.ui-th-column, .ui-jqgrid .ui-jqgrid-htable th.ui-th-column {vertical-align:bottom;}
+.ui-jqgrid .ui-jqgrid-htable .jqg-third-row-header th.ui-th-column {vertical-align:top;}
+
+.ui-jqgrid tr.ui-search-toolbar th.ui-th-column {vertical-align:middle;}
+tr.ui-search-toolbar {height: 26px; border-color:#dbdbdb; }
+tr.ui-search-toolbar input {height: 15px; border-width:1px; text-indent:2px; }
+.ui-jqgrid .ui-pg-input {border-width:1px; text-indent:2px; }
+
+tr.ui-search-toolbar input {margin: 1px 0 0 0;}
+tr.ui-search-toolbar select {margin: 1px 0 0 0}
+
+/* align textbox / textarea to top */
+.ui-jqgrid tr.jqgrow td { line-height: 22px; vertical-align: top; }
+
+/* required for theme which dont show autocomplete */
+.ui-autocomplete {z-index:999;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	tr.ui-search-toolbar input {height: 17px; margin: 3px 0 0 0;}
+	tr.ui-search-toolbar select {height: 17px; margin: 3px 0 0 0}
+}
+
+@-moz-document url-prefix() {  
+	tr.ui-search-toolbar { border-color:inherit; }
+	tr.ui-search-toolbar input {height: 17px; margin: 1px 0 0 0;}
+	tr.ui-search-toolbar select {height: 17px; margin: 1px 0 0 0}
+}
+
+.EditTable td textarea { padding: 0.3em;}
+.ui-th-column-header {text-align:center;}
+.ui-jqgrid .ui-search-input {width:98%;}
+
+/* form error box */
+td.ui-state-error { padding: 5px; }
+
+/*! jQuery Timepicker Addon - v1.4.4 - 2014-03-29
+* http://trentrichardson.com/examples/timepicker
+* Copyright (c) 2014 Trent Richardson; Licensed MIT */
+
+.ui-timepicker-div .ui-widget-header{margin-bottom:8px}.ui-timepicker-div dl{text-align:left}.ui-timepicker-div dl dt{float:left;clear:left;padding:0 0 0 5px}.ui-timepicker-div dl dd{margin:0 10px 10px 40%}.ui-timepicker-div td{font-size:90%}.ui-tpicker-grid-label{background:0;border:0;margin:0;padding:0}.ui-timepicker-rtl{direction:rtl}.ui-timepicker-rtl dl{text-align:right;padding:0 5px 0 0}.ui-timepicker-rtl dl dt{float:right;clear:right}.ui-timepicker-rtl dl dd{margin:0 40% 10px 10px}
+
+.ui-widget-overlay {
+    background-position: 50% 150%;
+}
+
+/* required for add/edit dialog overlapping with fancybox */
+.fancybox-overlay {
+	z-index:940;
+}
+
+/* keep horizonral scrollbar - even if no record */
+table.ui-jqgrid-btable { height: 1px; }
+
+/* Tree grid fix */
+.ui-jqgrid tr.ui-row-ltr td span.cell-wrapper
+{
+	line-height: 16px;
+}
+
+/* adjust select2 to fit in grid row */
+.select2-container .select2-choice .select2-arrow b
+{
+	background-position: 0 -2px !important;
+}
+.select2-dropdown-open .select2-choice
+{
+	background-color: white !important;
+}
+.select2-container .select2-choice
+{
+	height: 18px !important;
+	line-height: 18px !important;
+	background-image:none !important;
+	font-weight: normal !important;
+	text-align:left !important;
+}
+.select2-container-multi .select2-choices
+{
+	white-space: normal !important;
+}
+.select2-drop
+{
+	margin-top: -3px !important;
+}	
+
+/* arabic rtl */
+
+.ui-jqgrid[dir='rtl'] .ui-pg-table {
+    direction: rtl;
+}
+
+.ui-jqgrid[dir='rtl'] .ui-jqgrid-htable th.ui-th-column
+{
+	text-align:right;
+}
+.ui-jqgrid[dir='rtl'] .ui-custom-icon
+{
+	float:right;
+}
+
+.ui-jqgrid[dir='rtl'] .ui-jqgrid-title {
+	padding: 0.1em 0.6em;
+}
+	
+.ui-jqgrid[dir='rtl'] .cbox {
+	margin: 2px 7px;
+}
+	
+.ui-jqgrid[dir='rtl'] .ui-paging-info
+{
+	text-align: left !important;
+	height: inherit;
+}
+.ui-jqdialog[dir='rtl'] .ui-jqdialog-content .CaptionTD
+{
+	text-align: left;
+}
+
+.ui-jqgrid[dir='rtl'] tr.jqgrow td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.global-search input
+{
+	padding: 2px 4px !important;
+	margin-top: 1px !important;
+}
+
+.ui-jqgrid .navtable
+{ 
+	margin-top: 1px;
+}

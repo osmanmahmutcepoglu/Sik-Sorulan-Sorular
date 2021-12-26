@@ -1,0 +1,172 @@
+/**
+ * PHP Grid Component
+ *
+ * @author Abu Ghufran <gridphp@gmail.com> - http://www.phpgrid.org
+ * @version 1.5.2 build 20150322-1035
+ * @license: see license.txt included in package
+ */
+
+/* general */
+.ui-jqgrid { box-sizing: unset !important; }
+
+.ui-jqgrid, .ui-jqgrid body, .ui-jqdialog,
+.ui-widget, .ui-widget input, .ui-widget select, 
+.ui-widget textarea, .ui-widget button
+{font-size:13px; font-family:'Open Sans',"tahoma","verdana","arial";}
+
+a.ui-custom-icon, a.ui-custom-icon:hover {text-decoration:none;}
+.ui-widget .col-icon { margin-top: 2px !important; }
+.ui-jqgrid .ui-icon-asc { margin-top: 0px; }
+.ui-jqgrid .ui-icon-desc { margin-top: 10px; }
+.ui-jqgrid .global-search { margin-top: 0px; }	
+.ui-jqgrid .global-search button { margin-top:0px !important; }	
+
+/* flat border style */
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr,
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl,
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl,
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-br
+{
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+/* dialog */
+.ui-widget-content .searchFilter input, .ui-widget-content .searchFilter select, 
+.ui-widget-content .searchFilter textarea, .ui-widget-content .searchFilter button {width: auto; font-size:13px; font-weight:normal; height: 24px; margin:2px; }
+
+.ui-jqdialog-content .form-view-data
+{
+	padding: 5px 2px 2px;
+}
+
+.ui-jqdialog .ui-jqdialog-titlebar { padding: 0.3em 0.6em; }
+.ui-jqdialog .ui-jqdialog-titlebar-close span { margin-top:0px; color:inherit; }
+.ui-jqdialog .ui-jqdialog-titlebar-close:hover { text-decoration:none; }
+.ui-jqdialog .ui-jqdialog-titlebar-close { top: 52%; }
+
+.ui-widget-content select, .ui-widget-content textarea, .ui-widget-content input[type="text"], 
+.ui-widget-content input[type="password"], .ui-widget-content input[type="datetime"], .ui-widget-content input[type="datetime-local"], 
+.ui-widget-content input[type="date"], .ui-widget-content input[type="month"], .ui-widget-content input[type="time"], 
+.ui-widget-content input[type="week"], .ui-widget-content input[type="number"], .ui-widget-content input[type="email"], 
+.ui-widget-content input[type="url"], .ui-widget-content input[type="search"], .ui-widget-content input[type="tel"], 
+.ui-widget-content input[type="color"], .uneditable-input
+{color: inherit;}
+
+hr.ui-widget-content {border-color:transparent;}
+.ui-jqdialog-content .FormData {border-bottom: 1px dotted inherit;}
+
+/* search group */
+.group .first { width:10px; }
+.add-rule, .delete-rule, .add-group, .delete-group {margin: 0 0 10px 5px;}
+
+/* title of grid */
+.ui-jqgrid .ui-jqgrid-view .ui-jqgrid-titlebar
+{
+	padding: 0px 0px 0px 14px;
+	font-size: 17px;
+	font-weight: normal;
+}
+.ui-jqgrid .ui-jqgrid-title img { float: left; padding: 7px 8px 7px 0px; height:40px; }
+.ui-jqgrid-view .ui-jqgrid-titlebar-close { margin-right: 14px; margin-left: 14px; }
+.ui-jqgrid-view .ui-jqgrid-titlebar-close span { position: absolute; left:-1px; top:0px; }
+.ui-jqgrid-view .ui-jqgrid-titlebar-close:hover { text-decoration:none; }
+.ui-jqgrid-caption .ui-state-hover { border-color:transparent; }
+
+/* cells */
+.ui-jqgrid tr.footrow td { padding:6px 4px;}
+.ui-jqgrid tr.jqgroup  td { padding:6px 4px;}
+.ui-jqgrid tr.jqfoot  td { padding:6px 4px;}
+
+.ui-jqgrid input, .ui-jqgrid textarea { font-size:13px; padding:0px 5px; width:90%;}
+.ui-jqgrid select {font-size:13px; padding:0px 0px 0px 5px; width:90%; margin-bottom: 0px;}
+.ui-jqgrid input[type="checkbox"] { width:auto; }
+.ui-jqgrid .editable {margin:0; padding: 4px;}
+
+.ui-jqgrid .editable {margin-bottom: 2px; padding:2px 4px; }
+.EditTable td input, .EditTable td select, .EditTable td textarea { font-size: 13px; width: auto; }
+.EditTable td input[type="checkbox"] { width:auto; }
+
+
+
+/* header search */
+.ui-jqgrid tr.ui-search-toolbar th { border-color:rgba(0,0,0,0.25); height: 38px; }
+.ui-jqgrid tr.ui-search-toolbar input {margin:inherit; text-indent: 5px; height:auto; font-weight: normal; }
+.ui-jqgrid tr.ui-search-toolbar select {margin:inherit; height:auto; font-weight: normal; }
+
+.ui-jqgrid .ui-jqgrid-htable th div input {padding:0 3px; color: black;}
+
+/* pager */
+
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-div {text-align:center;}
+.ui-jqgrid input.ui-pg-input {
+    width: 35px;
+    height: 20px;
+    margin: 0px;
+    line-height: normal;
+    font-size: 13px;
+    color: black;
+}
+.ui-jqgrid select.ui-pg-selbox, .ui-jqgrid input.ui-pg-input
+{
+    height: 24px;
+    margin: 0px;
+    line-height: normal;
+    font-size: 13px;
+    padding: 0px 0px 0px 3px;
+    color: black;
+	width: auto;
+}
+.ui-jqgrid select.ui-pg-selbox { height: 26px; }
+.ui-jqgrid .ui-jqgrid-pager, .ui-jqgrid .ui-jqgrid-toppager
+{
+	font-size: 13px;
+}
+.ui-jqgrid .ui-pg-table
+{
+	height: 100%;
+	line-height: 17px;
+}
+.ui-jqgrid .ui-pg-button:hover
+{
+	padding: 1px;
+}
+.ui-pager-control .ui-state-hover
+{
+    border-color: transparent;
+    border: 0 none;
+    padding: 1px;
+}
+
+table.ColTable input
+{
+	width: auto;
+}
+
+table.ColTable label
+{
+	display: inline;
+}
+
+/* multiselect filter */
+.ui-multiselect 
+{
+	margin-top: 4px;
+	line-height: 15px;
+}
+
+.ui-multiselect-header .ui-multiselect-filter input
+{
+	padding: 0px 5px;
+	color: black;
+}
+
+.ui-multiselect-checkboxes label input {
+    margin-left: 4px;
+    margin-right: 4px;
+    top: -4px;
+}
+
+
